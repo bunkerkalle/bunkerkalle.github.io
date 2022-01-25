@@ -19,9 +19,11 @@ git commit
 # takes everything from the staging area and makes a permanent snapshot of the current state of your repository that is associated with a unique identifier
 
 git push origin main
+# push in Richtung github
 
 
+git status
+#Status letzter Änderungen
 
-
-
-Dies ist ein git pull test
+git checkout --DATEI
+#Geänderte Datei VOR git add auf den letzten Stand bringen
