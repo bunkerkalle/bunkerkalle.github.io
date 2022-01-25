@@ -1,0 +1,5 @@
+# Daten aus git ziehen:
+git pull origin main
+
+# Daten ins git schieben:
+git push origin main
