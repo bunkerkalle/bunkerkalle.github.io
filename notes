@@ -19,3 +19,9 @@ git commit
 # takes everything from the staging area and makes a permanent snapshot of the current state of your repository that is associated with a unique identifier
 
 git push origin main
+
+
+
+
+
+Dies ist ein git pull test
