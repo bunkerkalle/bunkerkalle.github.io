@@ -3,37 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meine Darkmode Website</title>
-
+    <title>Patrick's Groundhopping</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Willkommen auf meiner Darkmode Website</h1>
-        <p>Eine elegante, minimalistische Seite für GitHub Pages.</p>
-    </header>
 
-    <main>
+<header>
+    <h1>Patrick's Groundhopping</h1>
+    <p>Meine Fußballreisen durch Stadien in Deutschland und der Welt.</p>
+</header>
+
+<main id="posts"></main>
+
+<footer>
+    <p>© 2026 Patrick Moers</p>
+</footer>
+
+<script>
+// Liste deiner Berichte
+const posts = [
+    {
+        title: "Eintracht Frankfurt – Bayern München",
+        date: "12. März 2026",
+        stadium: "Deutsche Bank Park",
+        file: "posts/beispielspiel.html"
+    }
+];
+
+const container = document.getElementById("posts");
+
+posts.forEach(post => {
+    container.innerHTML += `
         <section>
-            <h2>Über mich</h2>
-            <p>
-                Hier kannst du etwas über dich oder dein Projekt schreiben.
-                Passe alles einfach im Code an!
-            </p>
+            <h2><a href="${post.file}">${post.title}</a></h2>
+            <p><strong>Datum:</strong> ${post.date}</p>
+            <p><strong>Stadion:</strong> ${post.stadium}</p>
+            <a class="readmore" href="${post.file}">Bericht lesen →</a>
         </section>
+    `;
+});
+</script>
 
-        <section>
-            <h2>Projekte</h2>
-            <ul>
-                <li><a href="#">Projekt 1</a></li>
-                <li><a href="#">Projekt 2</a></li>
-                <li><a href="#">Projekt 3</a></li>
-            </ul>
-        </section>
-    </main>
-
-    <footer>
-        <p>© 2026 – Deine GitHub Pages Seite</p>
-    </footer>
 </body>
 </html>
